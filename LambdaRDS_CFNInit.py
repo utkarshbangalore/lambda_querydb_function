@@ -110,8 +110,9 @@ def lambda_handler(event, context):
             cur.execute(
                 "Insert into Employees (EmployeeID, FirstName, LastName) Values (null, \"Bob\", \"Rogers\")")
             conn.commit()
-
-            print ('Created table Employees and inserted 3 rows.')
+                "Insert into Employees (EmployeeID, FirstName, LastName) Values (null, \"Bob\", \"Rogers\")")
+            conn.commit()
+            print ('Created table Employees and inserted 4 rows.')
 
         # insert a row into DynamoDB
         table.put_item(
